@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tune App</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+</head>
+<body>
+  <div id="auth-screen">
+    <h1>Tune Login</h1>
+    <input type="text" id="phone-number" placeholder="Phone Number">
+    <button id="verify-phone">Verify Phone</button>
+    <input type="text" id="verification-code" placeholder="Verification Code">
+    <button id="sign-in">Sign In</button>
+  </div>
+
+  <div id="chat-screen" style="display: none;">
+    <h1>Tune Chat</h1>
+    <div id="messages"></div>
+    <input type="text" id="message-input" placeholder="Enter Message">
+    <button id="send-message">Send</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
